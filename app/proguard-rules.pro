@@ -1,0 +1,13 @@
+-keepclassmembers class com.hackerboard.** { public <fields>; }
+-keep class com.hackerboard.macros.Macro        { *; }
+-keep class com.hackerboard.clipboard.ClipEntry  { *; }
+-keep class com.hackerboard.snippets.Snippet     { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+-dontwarn sun.misc.**
+-keep class com.google.gson.** { *; }
+-keep class * implements com.google.gson.TypeAdapterFactory
+-keep class * implements com.google.gson.JsonSerializer
+-keep class * implements com.google.gson.JsonDeserializer
+-keepattributes RuntimeVisibleAnnotations
+-keep class kotlin.Metadata { *; }
