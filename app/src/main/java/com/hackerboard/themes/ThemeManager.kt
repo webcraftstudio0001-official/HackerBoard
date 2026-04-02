@@ -6,6 +6,8 @@ package com.hackerboard.themes
  import androidx.datastore.preferences.preferencesDataStore
  import kotlinx.coroutines.flow.Flow
  import kotlinx.coroutines.flow.map
+import com.hackerboard.keyboard.LayoutId
+import com.hackerboard.keyboard.KeyType
   
   private val Context.ds by preferencesDataStore("hb_prefs")
    
